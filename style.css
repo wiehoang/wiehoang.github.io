@@ -1,0 +1,496 @@
+/* --- Global Resets & Font Import --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%; /* Base font size */
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Offset for fixed header during scroll */
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem; /* Approx 16px */
+    line-height: 1.5;
+    color: #333;
+    background-color: #f8f8f8; /* Light gray background for the overall page */
+}
+
+/* --- Utility Container --- */
+.container {
+    max-width: 1100px; /* Wider container for general layout */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+
+/* --- Site Header & Navigation --- */
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 1em 0;
+    position: sticky; /* Make header sticky */
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-branding a {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #222;
+    text-decoration: none;
+}
+
+.main-navigation ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-navigation li {
+    margin-left: 1.5em;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: #444;
+    font-size: 0.95em;
+    padding-bottom: 0.2em;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+    color: #000;
+    border-bottom-color: #888;
+}
+
+
+/* --- Main Content Area --- */
+.site-content {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.content-section {
+    padding: 3em 0;
+}
+.content-section:last-child {
+    border-bottom: none;
+}
+
+/* Section headings on the homepage */
+.content-section > .container > h2 {
+    font-size: 1.6em;
+    margin-bottom: 1.5em;
+    color: #444;
+    font-weight: 400; /* Lighter weight for '//' style */
+    text-align: center; /* Center homepage section titles */
+}
+
+/* Apply paper-like background/padding to specific sections */
+.paper-look {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 2px 0 ;0 5px rgba(0,0,0,0.05);
+}
+.paper-look > .container {
+     max-width: 800px; /* Constrain width for readability in these sections */
+}
+
+
+/* --- About Section Specific Styles --- */
+#about .about-content {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 2em; /* Space between image and text */
+}
+
+#about .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Circular picture */
+    object-fit: cover;
+    border: 3px solid #eee;
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+#about .about-text p {
+    margin-bottom: 1em;
+}
+#about .about-text p:last-child {
+    margin-bottom: 0;
+}
+#about .about-text a {
+    color: #0056b3;
+    text-decoration: none;
+    border-bottom: 1px dotted #0056b3;
+}
+#about .about-text a:hover {
+    color: #003d80;
+    border-bottom-style: solid;
+}
+
+
+/* --- Project Grid Styles --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 1.5em;
+}
+
+.project-thumbnail {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden; /* Clip image corners */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    position: relative; /* For positioning overlay */
+}
+
+.project-thumbnail:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.project-thumbnail a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-thumbnail img {
+    display: block;
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the area */
+    background-color: #f0f0f0;
+}
+
+.project-thumbnail .thumbnail-overlay {
+    padding: 1em 1.2em;
+}
+
+.project-thumbnail h3 {
+    font-size: 1.1em;
+    margin-bottom: 0.4em;
+    color: #222;
+    font-weight: 700;
+}
+
+.project-thumbnail p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 0.8em;
+}
+.project-thumbnail .view-project-btn {
+    font-size: 0.9em;
+    color: #0056b3;
+    font-weight: 700;
+    display: inline-block;
+}
+.project-thumbnail a:hover .view-project-btn {
+    text-decoration: underline;
+}
+
+
+/* --- Contact Section --- */
+#contact p {
+    text-align: center;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* --- Site Footer --- */
+.site-footer {
+    background-color: #e9e9e9;
+    padding: 1.5em 0;
+    margin-top: 3em;
+    text-align: center;
+    font-size: 0.85em;
+    color: #666;
+}
+
+/* --- ========================================== --- */
+/* ---    RESEARCH PAPER SPECIFIC STYLES        --- */
+/* --- Apply these within project-detail.html --- */
+/* --- ========================================== --- */
+
+/* Container for the detailed project page */
+.research-paper {
+    max-width: 800px; /* Controls line length */
+    margin: 2em auto; /* Center the paper */
+    padding: 3em;
+    background-color: #ffffff; /* White paper background */
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Elements within the paper */
+.research-paper .paper-header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 2.5em;
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+
+.research-paper .paper-header h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+    color: #111;
+}
+
+.research-paper .paper-header .authors {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+.research-paper .paper-header .affiliations {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 1.5em;
+}
+
+.research-paper .abstract {
+    margin: 1.5em auto;
+    padding: 1em 1.5em;
+    border: 1px dashed #eee;
+    background-color: #f9f9f9;
+    max-width: 90%;
+    text-align: left;
+}
+
+.research-paper .abstract h2 {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: #444;
+    border-bottom: none; /* Override section heading border */
+    padding-bottom: 0;
+}
+
+.research-paper .abstract p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #444;
+}
+
+.research-paper .keywords {
+    font-size: 0.9em;
+    color: #555;
+    text-align: left;
+    margin-top: 1.5em;
+}
+.research-paper .keywords strong {
+    color: #333;
+}
+
+
+/* Section & Content Styling within the paper */
+.research-paper section {
+    margin-bottom: 2.5em;
+}
+
+/* Headings within the paper */
+.research-paper h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 1em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #eee; /* Subtle separator */
+    text-align: left; /* Ensure paper headings are left-aligned */
+}
+
+.research-paper h3 { /* Sub-section headings */
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #333;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+.research-paper p {
+    margin-bottom: 1.2em;
+}
+
+/* Lists within the paper */
+.research-paper ul,
+.research-paper ol {
+    margin-bottom: 1.2em;
+    padding-left: 2.5em; /* Indentation */
+}
+
+.research-paper li {
+    margin-bottom: 0.5em;
+}
+
+/* Code Styling within the paper */
+.research-paper code {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #e8e8e8;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.research-paper pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1.2em;
+    overflow-x: auto;
+    border-radius: 4px;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.research-paper pre code {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-size: 1em; /* Inherit pre's font size */
+    border: none;
+}
+
+/* Figures & Captions within the paper */
+.research-paper figure {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.research-paper figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+.research-paper figcaption {
+    margin-top: 0.8em;
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Links within the paper */
+.research-paper a {
+    color: #0056b3;
+    text-decoration: none;
+}
+.research-paper a:hover,
+.research-paper a:focus {
+    text-decoration: underline;
+    color: #003d80;
+}
+
+/* References Section within the paper */
+.research-paper #references ol {
+    padding-left: 1.5em;
+    font-size: 0.95em;
+}
+
+.research-paper #references li {
+    margin-bottom: 0.8em;
+}
+
+
+/* --- Basic Responsiveness --- */
+@media (max-width: 768px) {
+    html {
+        font-size: 95%;
+        scroll-padding-top: 60px; /* Adjust for smaller header */
+    }
+
+    .container {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .site-header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .site-branding {
+        margin-bottom: 0.5em;
+    }
+    .main-navigation ul {
+       padding-left: 0; /* Reset padding */
+       flex-wrap: wrap; /* Allow nav items to wrap */
+    }
+     .main-navigation li {
+        margin-left: 0;
+        margin-right: 1em; /* Space between wrapped items */
+    }
+
+    #about .about-content {
+        flex-direction: column; /* Stack image and text */
+        align-items: center; /* Center items when stacked */
+        text-align: center;
+    }
+    #about .profile-pic {
+        margin-bottom: 1em;
+    }
+    #about .about-text {
+        text-align: left; /* Realign text left */
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust min size */
+        gap: 1em;
+    }
+
+    /* Adjust paper layout on smaller screens */
+    .research-paper {
+        padding: 2em;
+        margin: 1em auto; /* Reduce margin */
+    }
+    .research-paper .paper-header h1 { font-size: 1.8em; }
+    .research-paper h2 { font-size: 1.4em; }
+
+}
+
+@media (max-width: 600px) {
+     /* Further reduce font size if needed */
+     html { font-size: 90%; }
+
+    .research-paper {
+        padding: 1.5em;
+        border: none;
+        box-shadow: none;
+        margin: 0;
+    }
+    .paper-look { /* Reduce distinction on very small screens */
+         margin: 1em 0;
+         box-shadow: none;
+         border-top: 1px solid #eee; /* Add simple separator */
+         border-bottom: 1px solid #eee;
+    }
+     .content-section {
+        padding: 2em 0;
+     }
+      .content-section > .container > h2 {
+          font-size: 1.5em;
+          margin-bottom: 1em;
+      }
+
+}

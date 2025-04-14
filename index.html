@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoangNDH - Personal Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="site-branding">
+                <a href="index.html">HoangNDH // Personal Blog</a>
+            </div>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#learn">Learning Courses</a></li>
+                    <li><a href="#resume">Résume</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-content">
+       
+        <section id="projects" class="content-section paper-look">
+            <div class="container">
+                <h2>// Selected Projects</h2>
+                <div class="project-grid">
+
+                    <article class="project-thumbnail">
+                        <a href="project-detail.html"> {/* Link to the specific project page */}
+                            <img src="https://via.placeholder.com/400x250/eeeeee/aaaaaa?text=Project+Alpha+Viz" alt="Project Alpha Thumbnail">
+                            <div class="thumbnail-overlay">
+                                <h3>Project Alpha</h3>
+                                <p>An exploration of data visualization techniques using D3.js.</p>
+                                <span class="view-project-btn">View Details →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="project-thumbnail">
+                        <a href="project-detail.html"> {/* Link to another project page */}
+                             <img src="https://via.placeholder.com/400x250/eeeeee/aaaaaa?text=System+Design+Doc" alt="Project Beta Thumbnail">
+                             <div class="thumbnail-overlay">
+                                <h3>Project Beta</h3>
+                                <p>Designing a scalable microservices architecture.</p>
+                                <span class="view-project-btn">View Details →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="project-thumbnail">
+                        <a href="project-detail.html"> {/* Link to another project page */}
+                             <img src="https://via.placeholder.com/400x250/eeeeee/aaaaaa?text=Readability+Study" alt="Project Gamma Thumbnail">
+                             <div class="thumbnail-overlay">
+                                <h3>Project Gamma</h3>
+                                <p>A comparative study on monospace font readability online.</p>
+                                <span class="view-project-btn">View Details →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="learn" class="content-section">
+            <div class="container">
+                <h2>// Learning Courses</h2>
+                <div class="project-grid">
+
+                    <article class="course-thumbnail">
+                        <a href="course-detail.html"> {/* Link to the specific project page */}
+                            <img src="https://via.placeholder.com/400x250/eeeeee/aaaaaa?text=Project+Alpha+Viz" alt="Project Alpha Thumbnail">
+                            <div class="thumbnail-overlay">
+                                <h3>Discrete Math</h3>
+                                <p>An exploration of data visualization techniques using D3.js.</p>
+                                <span class="view-project-btn">View Details →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="course-thumbnail">
+                        <a href="course-detail.html"> {/* Link to another project page */}
+                             <img src="https://via.placeholder.com/400x250/eeeeee/aaaaaa?text=System+Design+Doc" alt="Project Beta Thumbnail">
+                             <div class="thumbnail-overlay">
+                                <h3>Linear Algebra</h3>
+                                <p>Designing a scalable microservices architecture.</p>
+                                <span class="view-project-btn">View Details →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="course-thumbnail">
+                        <a href="course-detail.html"> {/* Link to another project page */}
+                             <img src="https://via.placeholder.com/400x250/eeeeee/aaaaaa?text=Readability+Study" alt="Project Gamma Thumbnail">
+                             <div class="thumbnail-overlay">
+                                <h3>Microelectronics</h3>
+                                <p>A comparative study on monospace font readability online.</p>
+                                <span class="view-project-btn">View Details →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content-section paper-look">
+            <div class="container">
+                <h2>// About Me</h2>
+                <div class="about-content">
+                    <img src="https://via.placeholder.com/150/cccccc/888888?text=Your+Photo" alt="Your Name" class="profile-pic">
+                    <div class="about-text">
+                        <p>Welcome to my digital space. I'm [Your Name], a [Your Role/Passion] exploring [Your Interests]. This site uses a monospace font and a clean layout inspired by academic papers to present ideas and projects clearly.</p>
+                        <p>My work focuses on [Area 1], [Area 2], and the intersection of [Area 3] and [Area 4]. Feel free to explore the projects below or get in touch.</p>
+                        <p>Find me on: <a href="#">LinkedIn</a> / <a href="#">GitHub</a> / <a href="#">Twitter</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+             <div class="container">
+                 <h2>// Get In Touch</h2>
+                 <p>If you'd like to collaborate or discuss any of these topics, feel free to reach out via [Your Preferred Contact Method - e.g., email at yourname@example.com] or connect on the platforms linked above.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+          <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>  
+          <p>© <span id="year"></span> Your Name. Styles inspired by academic formatting.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
