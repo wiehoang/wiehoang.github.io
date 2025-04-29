@@ -1,0 +1,54 @@
+/* GOAL SECTION */ 
+.goal-detail {
+  flex-direction: row;
+}
+
+.goal-detail i {
+  align-self:flex-start;
+}
+
+/* SCOPE SECTION */
+#scope {
+  margin-bottom: 0;
+}
+
+/* TEAM SECTION */
+#team {
+  padding-bottom: 70px;
+}
+
+.team-detail {
+  flex-direction: row;
+}
+
+.team-detail i {
+  align-self:flex-start;
+}
+
+/* PRIMARY SECTION */
+#primary {
+  padding-bottom: 45px;
+}
+
+.primary-detail {
+  flex-direction: row;
+}
+
+.primary-detail i {
+  align-self:flex-start;
+}
+
+/* TIMELINE SECTION */
+#timeline {
+  height: 96%;
+}
+
+.timeline-detail {
+  flex-direction: row;
+}
+
+.timeline-number {
+  margin-top: 0;
+  min-width: 50px;
+  min-height: 50px;
+}

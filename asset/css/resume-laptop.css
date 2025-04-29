@@ -1,0 +1,62 @@
+/* TOP NAVIGATION BAR */
+.topnav li:nth-child(3) {
+	display: block;
+  position: relative;
+  width: 90px;
+  border: none;
+}
+
+.topnav li:nth-child(4) {
+	border: none;
+}
+
+/* Avatar on top navigation bar */
+.avatar {
+	display: inline-block;
+	width: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	border: 5px solid #fff;
+}
+
+/* EXPERIENCE SECTION */
+#work {
+  padding: 40px 100px;
+}
+
+/* CERTIFICATE SECTION */
+#certificate {
+	padding: 40px 100px;
+}
+
+#certificate img {
+  display: inline-block;
+  width: 160px;
+  height: 80px;
+  position: relative;
+}
+
+.certificate-info {
+  display: inline-block;
+  position: absolute;
+  padding: 0 10px;
+}
+
+/* PROJECT SECTION */
+#project {
+	padding: 40px 100px;
+}
+
+.project-info {
+  padding-left: 20px;
+}
+
+/* FOOTER SECTION */
+.contact a {
+  display: inline-block;
+	text-decoration: none;
+  margin: 0;
+}

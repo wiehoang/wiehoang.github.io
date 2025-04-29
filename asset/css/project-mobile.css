@@ -1,0 +1,152 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: arial, sans-serif, tahoma;
+	font-size: 10pt;
+	line-height: 1.6;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* BACK TO RESUME BUTTON */
+.resume-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #3379b5;
+  border: solid 3px #fff;
+  color: #fff;
+  padding: 2px 17px;
+  margin: 20px 0;
+}
+
+/* PROJECT DETAIL */
+.main-container {
+  width: 100%;
+	min-height: auto;
+  box-shadow: none;
+  background-color: #20a1de;
+}
+
+.container-fluid.main-container {
+  padding: 30px;
+}
+
+.project-detail {
+  background-color: #fff;
+  height: auto;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  padding-bottom: 15px;
+  border-bottom: solid 1px #616161;
+  color: #3379b5;
+}
+
+/* GOAL SECTION */
+.goal-detail {
+  flex-direction: column;
+  border-bottom: solid 1px #f1f1f1; 
+  padding: 10px 0;
+  text-justify: center;
+}
+
+.goal-detail i {
+  align-self: center;
+  font-size: 30px;
+}
+
+.goal-info {
+  padding: 0 20px;
+}
+
+.goal-info span {
+  font-weight: bold;
+}
+
+/* SCOPE SECTION */
+#scope .row {
+  border: none;
+}
+
+.scope-detail {
+  padding: 10px 20px;
+}
+
+.scope-detail h4 {
+  font-weight: bold;
+}
+
+/* TEAM SECTION */
+.team-detail {
+  flex-direction: column;
+  padding: 10px 0;
+  text-justify: center;
+}
+
+.team-detail i {
+  align-self: center;
+  font-size: 30px;
+}
+
+.team-info {
+  padding: 0 20px;
+}
+
+.team-info span {
+  font-weight: bold;
+}
+
+/* PRIMARY SECTION */
+.primary-detail {
+  flex-direction: column;
+  padding: 10px 0;
+  text-justify: center;
+}
+
+.primary-detail i {
+  align-self: center;
+  font-size: 30px;
+}
+
+.primary-detail p {
+  padding: 0 20px;
+}
+
+/* TIMELINE SECTION */
+.timeline-detail {
+  flex-direction: column;
+  padding: 10px 0;
+  text-justify: center;
+  border-bottom: dashed 1px #52bdc2;
+}
+
+.timeline-number {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #9e88ff;
+  border-radius: 50%;
+  border: solid 1px #616161;
+  color: #fff;
+  margin: 10px 0 5px 20px;
+}
+
+.timeline-info {
+  padding: 0 20px;
+}
+
+.timeline-info span {
+  font-weight: bold;
+}
+
+

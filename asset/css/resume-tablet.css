@@ -1,0 +1,45 @@
+/* TOP NAVIGATION BAR */
+.topnav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.topnav li {
+	padding: 14px 16px;
+  border-left: solid #f1f1f1;
+}
+
+.topnav li:last-child {
+	border-right: solid #f1f1f1;
+}
+
+/* PERSONAL INFO SECTION */
+#info .row > div {
+  padding: 0;
+}
+
+.info-1 {
+  height: 100%;
+}
+
+/* EXPERIENCE SECTION */
+#work {
+  padding: 40px;
+}
+
+.work-detail {
+	height: 100%;
+}
+
+/* CERTIFICATE SECTION */
+.certificate-1 {
+	border-right: solid 1px #199cdb; 
+  border-bottom: none;
+}
+
+/* PROJECT SECTION */
+.project-info > div {
+	margin: 10px 0 10px 5px;
+}
+
