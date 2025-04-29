@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./asset/css/font.css" />
+  <link rel="stylesheet" href="./asset/css/resume-mobile.css" />
+  <link rel="stylesheet" href="./asset/css/resume-tablet.css" media="(min-width: 768px)" />
+  <link rel="stylesheet" href="./asset/css/resume-laptop.css" media="(min-width: 1200px)" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Assignment03</title>
+</head>
+<body>
+  <div class="cv-page">
+    <header class="top-banner">
+      <img src="./asset/images/top-banner.jpg" alt="top-banner">
+      <div class="top-banner-content">
+        <h1>Nguyễn Đoàn Huy Hoàng</h1>
+        <p>Full Stack Developer</p>
+      </div>
+    </header>				
+
+    <nav class="topnav">
+      <ul>
+        <li>
+          <i class="icon-user"></i>
+          <a href="#info">THÔNG TIN</a>
+        </li>
+        <li>
+          <i class="icon-doc-text-inv"></i>
+          <a href="#work">LÝ LỊCH</a>
+        </li>
+        <li>
+          <img src="./asset/images/avatar.png" alt="profile-avatar" class="avatar">
+        </li>
+        <li>
+          <i class="icon-mail-alt"></i>
+          <a href="#certificate">CHỨNG CHỈ</a>
+        </li>
+        <li>
+          <i class="icon-star-1"></i>
+          <a href="#project">DỰ ÁN</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="info" class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="info-1">
+            <h2>Mục tiêu nghề nghiệp</h2>
+            <p>Là một người kiên trì và thích sự thử thách,
+            tôi luôn không ngừng học hỏi để vượt qua giới hạn của bản thân. Tôi mong muốn mình sẽ được làm việc ở vị trí Fullstack Developer.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="info-2">
+            <h2>Thông tin cá nhân</h2>
+            <div class="info-submit">
+              <form>
+                <input type="email" id="email" name="personalEmail" placeholder="Enter email">
+                <p class="more-info">Hãy nhập email để xác thực</p>
+                <input type="submit" value="Submit" class="submit-btn">
+              </form> 
+            </div>
+
+            <div class="info-detail hidden">
+              <p><span>Ngày sinh : </span> 12/10/1995</p>
+              <p><span>Giới tính : </span> Nam</p>
+              <p><span>Điện thoại : </span> 0909474037</p>
+              <p><span>Email : </span> hoangndhfx32433@funix.edu.vn</p>
+              <p><span>Địa chỉ : </span> Hồ Chí Minh, Việt Nam</p>
+              <p><span>Website : </span> <a href="https://abc.tech">https://abc.tech</a></p>
+              <i class="icon-twitter"></i>
+              <i class="icon-facebook"></i>
+              <i class="icon-gplus"></i>
+              <i class="icon-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="work" class="container-fluid">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="work-detail experience">
+            <h2>Kinh nghiệm</h2>
+            <i class="ic-toolbox"></i>
+            
+            <button type="button" class="d-flex align-items-center work-btn">
+              <i class="icon-down-dir"></i>
+              <span>View More</span>
+            </button>
+            
+            <ul class="experience-detail hidden">
+              <li class="experience-1">
+                <h3>Giao Hàng Nhanh</h3>
+                <p class="experience-time">01/2022 - 01/2025</p>
+                <p>Digital Lead</p>	
+                <p>- Đề xuất chiến lược truyền thông trên digital theo năm, quý và tháng</p>
+                <p>- Tổng hợp, trình bày và báo cáo chiến lược marketing theo năm, quý, tháng cho BOD</p>								
+              </li>
+          
+              <li class="experience-2">
+                <h3>Dentsu Vietnam</h3>
+                <p class="experience-time">09/2020 - 10/2021</p>
+                <p>Digital Planner</p>	
+                <p>- Thu thập, phân tích dữ liệu để đề xuất chiến lược digital phù hợp với từng kênh</p>
+                <p>- Quản lý nhóm 4 thành viên</p>								
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="work-detail education">
+            <h2>Học vấn</h2>
+            <i class="ic-pencil"></i>
+            
+            <button type="button" class="d-flex align-items-center work-btn">
+              <i class="icon-down-dir"></i>
+              <span>View More</span>
+            </button>
+
+            <ul class="education-detail hidden">
+              <li class="education-1">
+                <h3>FUNIX</h3>
+                <p class="education-time">2024 - <span>Hiện tại</span></p>
+                <p>Chương trình Kỹ thuật phần mềm</p>
+              </li>
+
+              <li class="education-2">
+                <h3>Cử nhân - Đại học Tài Chính Marketing</h3>
+                <p class="education-time">2013 - 2017</p>
+                <p>Chuyên ngành: Marketing</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="work-detail activity">
+            <h2>Hoạt động</h2>
+            <i class="ic-toolbox"></i>
+
+            <button type="button" class="d-flex align-items-center work-btn">
+              <i class="icon-down-dir"></i>
+              <span>View More</span>
+            </button>
+
+            <ul class="activity-detail hidden">
+              <li class="activity-1">
+                <h3>Google Digital Guru</h3>
+                <p class="activity-time">09/2021 - 10/2021</p>
+                <p>Blue Belt</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="work-detail hobby">
+            <h2>Sở thích</h2>
+            <i class="ic-telescope"></i>
+
+            <button type="button" class="d-flex align-items-center work-btn">
+              <i class="icon-down-dir"></i>
+              <span>View More</span>
+            </button>
+
+            <div class="hobby-detail hidden">
+              <div class="d-flex hobby-ic">
+                <div class="d-flex align-items-center"><i class="ic-compass"></i></div>
+                <div class="d-flex align-items-center"><i class="ic-map"></i></div>
+                <div class="d-flex align-items-center"><i class="ic-browser"></i></div>
+              </div>
+              <div class="d-flex hobby-name">
+                <p>Trekking</p>
+                <p>Du lịch</p>
+                <p>Lướt web</p>
+              </div>
+            </div>
+          </div>	
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="work-detail language">
+            <h2>Ngôn ngữ</h2>
+            <i class="ic-mic"></i>
+
+            <button type="button" class="d-flex align-items-center work-btn">
+              <i class="icon-down-dir"></i>
+              <span>View More</span>
+            </button>
+
+            <div class="language-detail hidden">
+              <div class="language-1">
+                <h3>Tiếng Anh - IELTS 7.0</h3>
+                <span class="skill-blue"></span>
+                <span class="skill-blue"></span>
+                <span class="skill-grey"></span>
+              </div>
+            
+              <div class="language-2">
+                <h3>Tiếng Nhật - JPLT N5</h3>
+                <span class="skill-blue"></span>
+                <span class="skill-grey"></span>
+                <span class="skill-grey"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="work-detail skill">
+            <h2>Kỹ năng</h2>
+            <i class="ic-tools-2"></i>
+
+            <button type="button" class="d-flex align-items-center work-btn">
+              <i class="icon-down-dir"></i>
+              <span>View More</span>
+            </button>
+
+            <div class="skill-detail hidden">
+              <div class="skill-1">
+                <h3>Java: Fundamental</h3>
+                <span class="skill-blue"></span>
+                <span class="skill-grey"></span>
+                <span class="skill-grey"></span>
+              </div>
+            
+              <div class="skill-2">
+                <h3>Python: Fundamental</h3>
+                <span class="skill-blue"></span>
+                <span class="skill-grey"></span>
+                <span class="skill-grey"></span>
+              </div>
+
+              <div class="skill-3">
+                <h3>Data Analytics: Intermediate</h3>
+                <span class="skill-blue"></span>
+                <span class="skill-blue"></span>
+                <span class="skill-grey"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div id="certificate" class="container-fluid">
+      <div class="row">
+        <h2>Chứng nhận - Giải thưởng</h2>
+        <div class="col-12 col-md-6 certificate-1">
+          <img src="./asset/images/cert-1.png" alt="certificate 1">
+          <div class="certificate-info">
+            <h3>Chứng chỉ lập trình OOP</h3>
+            <p>- GPA: 8.0</p>
+          </div>
+        </div>
+              
+        <div class="col-12 col-md-6 certificate-2">
+          <img src="./asset/images/cert-2.png" alt="certificate 2">
+          <div class="certificate-info">
+            <h3>Chứng chỉ toán rời rạc</h3>
+            <p>- GPA: 8.4</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="project" class="container-fluid">
+      <div class="row">
+        <h2>Dự án</h2>
+        <div class="col-12 col-md-4 project-detail">
+          <a href="https://wiehoang.github.io/project" target="_blank">
+            <img src="./asset/images/project-1.png" alt="project-1">
+          </a>
+          <div class="project-name">
+            <h3>CV cá nhân</h3>
+            <a href="https://wiehoang.github.io/project" target="_blank" class="project-link">View More</a>
+          </div>
+          <div class="d-flex project-info">
+            <div class="d-flex project-time">2025</div>
+            <div class="d-flex align-items-center">
+              <i class="icon-user-1"></i>
+              <p>FUNiX</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="icon-lightbulb-2"></i>
+              <p>Developer</p>
+            </div>
+          </div>
+          <table>
+            <tr>
+              <th>Mô tả</th>
+              <td>Trang web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp</td>
+            </tr>
+            <tr>
+              <th>Nhiệm vụ</th>
+              <td>
+                <ul>
+                  <li>- Phát triển code</li>
+                  <li>- Review code</li>
+                  <li>- Tối ưu code</li>
+                  <li>- Xử lý lỗi</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Công nghệ</th>
+              <td>HTML, CSS</td>
+            </tr>
+          </table>
+        </div>
+          
+        <div class="col-12 col-md-4 project-detail">
+          <a href="https://wiehoang.github.io/project" target="_blank">
+            <img src="./asset/images/project_2.png" alt="project-2">
+          </a>
+          <div class="project-name">
+            <h3>Hệ thống tuyển dụng nhân sự</h3>
+            <a href="https://wiehoang.github.io/project" target="_blank" class="project-link">View More</a>
+          </div>
+          <div class="d-flex project-info">
+            <div class="d-flex project-time">2024</div>
+            <div class="d-flex align-items-center">
+              <i class="icon-user-1"></i>
+              <p>FUNiX</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="icon-lightbulb-2"></i>
+              <p>Developer</p>
+            </div>
+          </div>
+          <table>
+            <tr>
+              <th>Mô tả</th>
+              <td>Hệ thống backend quản lý tuyển dụng cho các công ty nhỏ, sử dụng kiến trúc RESTful API</td>
+            </tr>
+            <tr>
+              <th>Nhiệm vụ</th>
+              <td>
+                <ul>
+                  <li>- Phát triển code</li>
+                  <li>- Review code</li>
+                  <li>- Tối ưu code</li>
+                  <li>- Xử lý lỗi</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Công nghệ</th>
+              <td>Java, Maven</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="col-12 col-md-4 project-detail">
+          <a href="https://wiehoang.github.io/project" target="_blank">
+            <img src="./asset/images/project_3.png" alt="project-3">
+          </a>
+          <div class="project-name">
+            <h3>Trang web xem tin tức</h3>
+            <a href="https://wiehoang.github.io/project" target="_blank" class="project-link">View More</a>
+          </div>
+          <div class="d-flex project-info">
+            <div class="d-flex project-time">2021</div>
+            <div class="d-flex align-items-center">
+              <i class="icon-user-1"></i>
+              <p>FUNiX</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="icon-lightbulb-2"></i>
+              <p>Developer</p>
+            </div>
+          </div>
+          <table>
+            <tr>
+              <th>Mô tả</th>
+              <td>Trang web xem tin tức từ nhiều nguồn, người dùng có thể tìm kiếm tin tức dựa theo các từ khoá</td>
+            </tr>
+            <tr>
+              <th>Nhiệm vụ</th>
+              <td>
+                <ul>
+                  <li>- Phát triển code</li>
+                  <li>- Review code</li>
+                  <li>- Tối ưu code</li>
+                  <li>- Xử lý lỗi</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Công nghệ</th>											
+              <td>HTML, CSS, Javascript</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <div class="contact">
+        <ol class="d-flex">
+          <li class="d-flex align-items-center">
+            <i class="icon-facebook-circled"></i>
+            <a href="http://facebook.com/wiehoang">Facebook</a>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="icon-linkedin-circled"></i>
+            <a href="https://www.linkedin.com/in/huyhoang1210/">Linkedin</a>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="icon-github-circled"></i>
+            <a href="https://github.com/wiehoang">Github</a>
+          </li>
+        </ol>
+      </div>
+    </footer>				
+  </div>
+  <script src="./asset/js/resume-script.js"></script>
+</body>
+</html>
