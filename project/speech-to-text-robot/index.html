@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speech-to-text Robot Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./asset/css/font.css">
+  <link rel="stylesheet" href="./asset/css/speech-to-text-robot.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-branding">
+        <a href="index.html">Your Name // Digital Journal</a>
+      </div>
+      
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <article class="research-paper">
+      <header class="paper-header">
+        <h1>Project: Speech-to-text Robot</h1>
+        <p class="authors">Wie Hoang</p>
+        <p class="affiliations">Date: April 9, 2025</p>
+        <div class="abstract">
+          <h2>Abstract</h2>
+          <p>This project explored the implementation of various data visualization techniques using the D3.js library. We focused on creating interactive and informative charts for hypothetical datasets, emphasizing code clarity, performance, and adherence to visualization best practices. The goal was to build a reusable component library for common chart types.</p>
+        </div>
+        <p class="keywords"><strong>Keywords:</strong> Data Visualization, D3.js, JavaScript, Frontend Development, Interaction Design.</p>
+      </header>
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <p>Data visualization is crucial for understanding complex datasets. While many libraries exist, D3.js provides unparalleled flexibility by working directly with web standards (HTML, SVG, CSS). This project aimed to leverage D3's power to create specific, tailored visualizations beyond standard charting libraries.</p>
+        <p>The primary challenge addressed was [mention a specific challenge, e.g., handling large datasets efficiently, creating linked views, implementing specific non-standard chart types].</p>
+      </section>
+
+      <section id="methodology">
+        <h2>2. Implementation Details</h2>
+        <p>The project was structured using Raspberry Pi.</p>
+        <ul>
+          <li><code>d3-scale</code>: For mapping data domains to visual ranges.</li>
+          <li><code>d3-axis</code>: For generating human-readable axes.</li>
+          <li><code>d3-selection</code>: For binding data to DOM elements.</li>
+          <li><code>d3-shape</code>: For generating SVG path data for lines, areas, etc.</li>
+        </ul>
+        <p>Specific components developed include:</p>
+        <ol>
+          <li>Interactive Scatter Plot with Zoom/Pan</li>
+          <li>Linked Bar Chart and Line Chart</li>
+          <li>Custom Radial Tree Diagram</li>
+        </ol>
+          <pre>
+            <code class="language-javascript"></code>
+          </pre>
+      </section>
+
+      <section id="results">
+        <h2>3. Results & Demonstration</h2>
+        <p>The resulting components demonstrated effective visualization of the test datasets. Interactivity features like tooltips and zooming significantly enhanced data exploration capabilities.</p>
+        <figure>
+          <img src="https://via.placeholder.com/600x350/cccccc/888888?text=Interactive+Scatter+Plot+Screenshot" alt="Scatter Plot Example">
+          <figcaption>Fig. 1: Screenshot of the interactive scatter plot component.</figcaption>
+        </figure>
+        <p>Performance testing on datasets up to [Number] points showed acceptable rendering times ([Time]) on modern browsers. Code modularity allows for relatively easy integration into other projects.</p>
+      </section>
+
+      <section id="conclusion">
+        <h2>4. Conclusion & Future Work</h2>
+        <p>Project successfully demonstrates the creation of custom, the developed components serve as a useful foundation.</p>
+      </section>
+
+      <section id="references">
+        <h2>References</h2>
+        <ol>
+          <li>Bostock, M., Ogievetsky, V., & Heer, J. (2011). D³ Data-Driven Documents. *IEEE Transactions on Visualization and Computer Graphics*, 17(12), 2301-2309.</li>
+        </ol>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span>Wie Hoang.</p>
+    </div>
+  </footer>
+
+  <script>
+    const yearElement = document.getElementById('year');
+    if (yearElement) {
+      yearElement.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
